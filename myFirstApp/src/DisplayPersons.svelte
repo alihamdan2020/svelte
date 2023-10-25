@@ -1,18 +1,19 @@
 <script>
 import Button from './Buttons.svelte'
-    let persons=
-    [
-{id:1,name:"ali",family:"hamdan",age:45,country:"beirut"},
-{id:2,name:"ahmad",family:"kazem",age:30,country:"beirut"},
-{id:3,name:"ammar",family:"hakim",age:45,country:"jbeil"},
-{id:4,name:"wael",family:"ramadn",age:18,country:"beirut"},
-{id:5,name:"ali",family:"hamdan",age:45,country:"saida"},
-{id:6,name:"ahmad",family:"kazem",age:30,country:"beirut"},
-{id:7,name:"ammar",family:"hakim",age:45,country:"beirut"},
-{id:8,name:"wael",family:"ramadn",age:18,country:"beirut"},
-{id:9,name:"faten",family:"ozeir",age:33,country:"saida"},
-{id:10,name:"samir",family:"samir",age:27,country:"jbeil"}
-    ]
+export let persons
+//     let persons=
+//     [
+// {id:1,name:"ali",family:"hamdan",age:45,country:"beirut"},
+// {id:2,name:"ahmad",family:"kazem",age:30,country:"beirut"},
+// {id:3,name:"ammar",family:"hakim",age:45,country:"jbeil"},
+// {id:4,name:"wael",family:"ramadn",age:18,country:"beirut"},
+// {id:5,name:"ali",family:"hamdan",age:45,country:"saida"},
+// {id:6,name:"ahmad",family:"kazem",age:30,country:"beirut"},
+// {id:7,name:"ammar",family:"hakim",age:45,country:"beirut"},
+// {id:8,name:"wael",family:"ramadn",age:18,country:"beirut"},
+// {id:9,name:"faten",family:"ozeir",age:33,country:"saida"},
+// {id:10,name:"samir",family:"samir",age:27,country:"jbeil"}
+//     ]
 
   function deletePerson(id){
   
