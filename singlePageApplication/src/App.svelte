@@ -1,24 +1,34 @@
 <script>
-  import Header from './Header.svelte'
+  import Li from './Li.svelte'
   import Home from './Home.svelte'
   import AboutUs from './AboutUs.svelte'
   import ContactUs from './ContactUs.svelte';
+
+  import Fadi from './Fadi.svelte';
+
   let currentPage='home'
+  let test="ahmad";
 
   function changePage(x){
     currentPage=x;
+    }
+
+    function changeUpadte(newTest){
+      test=newTest
     }
 </script>
 
 <header>
   <nav>
     <ul>
-      <Header text='home' on:click={()=>changePage('home')} style="normal"/>
-      <Header text='about us' on:click={()=>changePage('about')} style="danger"/>
-      <Header text='contact' on:click={()=>changePage('contact')} style="normal"/>
+      <Li text='home' on:click={()=>changePage('home')} style="normal"/>
+      <Li text='about us' on:click={()=>changePage('about')} style="danger"/>
+      <Li text='contact' on:click={()=>changePage('contact')} style="normal"/>
     </ul>
   </nav>
 </header>
+
+
 <div class="main">
 {#if currentPage=='home'}
 <Home />
@@ -29,3 +39,6 @@
 {/if}
 </div>
 <p>{currentPage}</p>
+
+<Fadi test={test} changeUpadte={changeUpadte}/>
+<p>{test}</p>
