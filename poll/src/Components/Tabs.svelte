@@ -6,8 +6,8 @@
 
     export let activeItem
     export let items
-    // export let changeActive
-    
+   
+   // export let changeActive
     // function changeActiveItem(itemValue){
     //     changeActive(itemValue)
     // }

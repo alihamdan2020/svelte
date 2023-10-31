@@ -7,14 +7,14 @@
   import Fadi from './Fadi.svelte';
 
   let currentPage='home'
-  let test="ahmad";
+  let valueToPass="hello every one";
+  let activeClass;
 
   function changePage(x){
-    currentPage=x;
-    }
+    currentPage=x;    }
 
-    function changeUpadte(newTest){
-      test=newTest
+    function changeUpadte(e){
+      valueToPass=e.detail
     }
 </script>
 
@@ -40,5 +40,5 @@
 </div>
 <p>{currentPage}</p>
 
-<Fadi test={test} changeUpadte={changeUpadte}/>
-<p>{test}</p>
+<Fadi  on:changeValue={changeUpadte}/>
+<p>{valueToPass}</p>

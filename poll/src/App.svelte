@@ -2,6 +2,7 @@
 import Footer from './Components/Footer.svelte';
 import Header from './Components/Header.svelte'	
 import Tabs from './Components/Tabs.svelte';
+
 let items=['Current Polls','Add new poll']
 let activeItem='Current Polls'
 
