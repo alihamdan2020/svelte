@@ -1,5 +1,6 @@
 <script>
     import {createEventDispatcher} from 'svelte'
+    import { append } from 'svelte/internal';
     const dispatch=createEventDispatcher();
 
     // importance of dispatch, allow to send date from child to App
@@ -18,6 +19,7 @@
 <ul>
     {#each items as singleItem}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- becode below mean pass the activeitem by clikck to append.svelte -->
         <li on:click={()=>dispatch('changeActiveItem',singleItem)}>
             
         <!-- 
@@ -25,6 +27,7 @@
         <li on:click={()=>changeActiveItem(singleItem)}> 
         -->
         
+        <!-- apply class named active if condition is true -->
         <div 
         class:active={singleItem==activeItem}>
         {singleItem}
